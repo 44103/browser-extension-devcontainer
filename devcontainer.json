@@ -1,0 +1,27 @@
+{
+  "name": "Chrome Extension",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "app",
+  "remoteUser": "root",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "zsh"
+      },
+      "extensions": [
+        "fabiospampinato.vscode-todo-plus",
+        "shardulm94.trailing-spaces",
+        "patbenatar.advanced-new-file",
+        "mhutchie.git-graph",
+        "christian-kohler.path-intellisense",
+        "gamunu.vscode-yarn",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "initializeCommand": "touch .devcontainer/.zsh_history"
+}

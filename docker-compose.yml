@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: .
+    tty: true
+    volumes:
+      - ../:/work
+      - .zsh_history:/root/.zsh_history
+    working_dir: "/work"
